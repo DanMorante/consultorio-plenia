@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Consultorio Plenia. Medicina, coaching y cosmetología en 25 de Mayo, Buenos Aires.">
+    <title>Dermocosmiatría · Antonella Tormos | Consultorio Plenia</title>
+    <link rel="icon" href="imagenes/logo-title.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="beauty">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    
+<header class="header wrap">
+        <!-- Logo centrado -->
+        <a href="index.html" aria-label="Plenia, inicio" class="logo-link">
+            <img src="imagenes/logo-title.png" alt="Consultorio Plenia" class="logo-img">
+        </a>
+        
+        <!-- Botón Hamburguesa (3 líneas) -->
+        <button class="menu-toggle" aria-label="Abrir menú" onclick="toggleMenu()">
+            <!-- Ícono SVG de 3 líneas -->
+            <svg viewBox="0 0 24 24" width="35" height="35" fill="var(--navy)"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+
+        <!-- Navegación (Menú lateral en celulares) -->
+        <nav aria-label="Navegación principal" id="main-nav">
+            <!-- Botón de cierre (X) -->
+            <button class="close-menu" aria-label="Cerrar menú" onclick="toggleMenu()">✕</button>
+            
+            <a href="index.html">Inicio</a>
+            <a href="medicina.html">Medicina</a> <!-- Agregale aria-current="page" a la página en la que estés -->
+            <a href="coaching.html">Coaching</a>
+            <a href="cosmetologia.html" aria-current="page">Dermocosmiatría</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- Script para abrir y cerrar el menú -->
+        <script>
+            function toggleMenu() {
+                document.getElementById('main-nav').classList.toggle('open');
+            }
+        </script>
+    </header>
+
+    <main id="contenido" class="wrap">
+        <section class="hero">
+            <div class="portrait" style="aspect-ratio: 368/412; overflow: hidden;">
+                <img src="imagenes/anto.png" alt="Antonella Tormos" style="width: 100%; height: 100%; object-fit: cover; display: block;" decoding="async">
+            </div>
+            <div class="hero-copy">
+                <span class="area-dot" aria-hidden="true">
+                    <img src="imagenes/iconocosmetologia.png" alt="" class="service-icon">
+                </span>
+                <p class="eyebrow">Cosmetología</p>
+                <h1>Antonella<br>Tormos</h1>
+                <div class="title-rule"></div>
+                <p class="role">Enfermera · Cosmetóloga</p>
+                <p class="script">Cuidado integral de la piel<br>y bienestar estético ♡</p>
+            </div>
+        </section>
+        
+        <div class="treatments">
+            <section class="treatment">
+                <div class="treatment-copy">
+                    <span class="treatment-icon" aria-hidden="true">✧</span>
+                    <h2>Tratamientos<br>faciales</h2>
+                    <span class="small-divider"></span>
+                    <ul>
+                        <li>Limpieza facial profunda</li>
+                        <li>Dermapen / Microneedling</li>
+                        <li>Rejuvenecimiento facial</li>
+                        <li>Tratamientos para acné</li>
+                        <li>Hidralips</li>
+                        <li>Hilos tensores</li>
+                        <li>Mesoterapia facial</li>
+                    </ul>
+                </div>
+                <div class="treatment-photo" style="aspect-ratio: 332/232; overflow: hidden;">
+                    <img src="imagenes/tratamiento-facial.png" alt="Tratamientos faciales" style="width: 100%; height: 100%; object-fit: cover; display: block;" decoding="async">
+                </div>
+            </section>
+            
+            <section class="treatment">
+                <div class="treatment-copy">
+                    <span class="treatment-icon" aria-hidden="true">✧</span>
+                    <h2>Tratamientos<br>capilares</h2>
+                    <span class="small-divider"></span>
+                    <ul>
+                        <li>Dermapen con exosomas para caída del cabello</li>
+                    </ul>
+                </div>
+                <div class="treatment-photo" style="aspect-ratio: 288/351; overflow: hidden;">
+                    <img src="imagenes/tratamiento-capilar.png" alt="Tratamientos capilares" style="width: 100%; height: 100%; object-fit: cover; display: block;" decoding="async">
+                </div>
+            </section>
+            
+            <section class="treatment">
+                <div class="treatment-copy">
+                    <span class="treatment-icon" aria-hidden="true">✧</span>
+                    <h2>Tratamientos<br>corporales</h2>
+                    <span class="small-divider"></span>
+                    <ul>
+                        <li>Lipoláser</li>
+                        <li>Ultracavitación</li>
+                        <li>Radiofrecuencia</li>
+                        <li>Vacuum</li>
+                        <li>Crioterapia</li>
+                        <li>EMS</li>
+                        <li>Mesoterapia corporal</li>
+                    </ul>
+                </div>
+                <div class="treatment-photo" style="aspect-ratio: 306/220; overflow: hidden;">
+                    <img src="imagenes/tratamiento-corporal.png" alt="Tratamientos corporales" style="width: 100%; height: 100%; object-fit: cover; display: block;" decoding="async">
+                </div>
+            </section>
+        </div>
+        
+        <div class="benefits">
+            <p>Tratamientos<br><strong>personalizados</strong></p>
+            <p>Higiene y<br><strong>seguridad</strong></p>
+            <p>Resultados<br><strong>reales</strong></p>
+            <p class="script">Tu belleza,<br>mi compromiso ♡</p>
+        </div>
+        
+        <div class="columns beauty-contact">
+            <section class="panel location">
+                <span class="symbol" aria-hidden="true">
+                    <img src="imagenes/icono-ubicacion.png" alt="">
+                </span>
+                <div>
+                    <h2>Nuestro consultorio</h2>
+                    <p>Calle 6 N.º 823, entre 27 y 28<br>25 de Mayo, Provincia de Buenos Aires, Argentina</p>
+                </div>
+                <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+6+823+25+de+Mayo+Buenos+Aires+Argentina" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">→</span></a>
+            </section>
+            
+            <section class="panel contact" id="contacto">
+                <h2>Contacto</h2>
+                <a class="button whatsapp" href="https://wa.me/5492345405455" target="_blank" rel="noopener noreferrer">Turnos y consultas por WhatsApp <span aria-hidden="true">↗</span></a>
+                <a class="phone" href="tel:+5492345405455">2345 40 54 55</a>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="wrap footer">
+        <a href="index.html">← Volver a Consultorio Plenia</a>
+    </footer>
+</body>
+</html>

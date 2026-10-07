@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Consultorio Plenia. Medicina, coaching y cosmetología en 25 de Mayo, Buenos Aires.">
+    <title>Inicio | Consultorio Plenia</title>
+    <link rel="icon" href="imagenes/logo-title.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="home">
+  <header class="header wrap">
+        <!-- Logo centrado -->
+        <a href="index.html" aria-label="Plenia, inicio" class="logo-link">
+            <img src="imagenes/logo-title.png" alt="Consultorio Plenia" class="logo-img">
+        </a>
+        
+        <!-- Botón Hamburguesa (3 líneas) -->
+        <button class="menu-toggle" aria-label="Abrir menú" onclick="toggleMenu()">
+            <!-- Ícono SVG de 3 líneas -->
+            <svg viewBox="0 0 24 24" width="35" height="35" fill="var(--navy)"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+
+        <!-- Navegación (Menú lateral en celulares) -->
+        <nav aria-label="Navegación principal" id="main-nav">
+            <!-- Botón de cierre (X) -->
+            <button class="close-menu" aria-label="Cerrar menú" onclick="toggleMenu()">✕</button>
+            
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="medicina.html">Medicina</a> <!-- Agregale aria-current="page" a la página en la que estés -->
+            <a href="coaching.html">Coaching</a>
+            <a href="cosmetologia.html">Cosmetología</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- Script para abrir y cerrar el menú -->
+        <script>
+            function toggleMenu() {
+                document.getElementById('main-nav').classList.toggle('open');
+            }
+        </script>
+    </header>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <main id="contenido" class="wrap">
+      <h1 class="sr-only">Consultorio Plenia: salud y bienestar integral</h1>
+<div class="services">
+        <!-- Tarjeta Medicina -->
+        <article class="service-card medicine">
+          <div class="card-photo">
+            <a href="medicina.html" aria-label="Ir a la página del Dr. Mario Soria">
+            <img src="imagenes/mario.png" alt="Dr. Mario Soria">
+            </a>
+          </div>
+          <div class="card-body">
+            <span class="area-dot" aria-hidden="true">
+              <!-- Ícono de medicina -->
+              <img src="imagenes/iconomedicina.png" alt="" class="service-icon">
+            </span>
+            <h2>Medicina</h2>
+            <h3>Dr. Mario Soria</h3>
+            <p>Médico General<br>y Familiar</p>
+            <a class="button" href="medicina.html">
+              <span>Información<br>y turnos</span>
+              <span aria-hidden="true">›</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tarjeta Coaching -->
+        <article class="service-card coaching">
+          <div class="card-photo">
+            <a href="coaching.html" aria-label="Ir a la página de la Lic. Carolina Diaz">
+            <img src="imagenes/caro.png" alt="Carolina Díaz">
+            </a>
+          </div>
+          <div class="card-body">
+            <span class="area-dot" aria-hidden="true">
+              <!-- Ícono de coaching -->
+              <img src="imagenes/iconocoaching.png" alt="" class="service-icon">
+            </span>
+            <h2>Coaching</h2>
+            <h3>Carolina Díaz</h3>
+            <p>Coach Ontológica · Enfermera<br><span class="small-divider"></span>Desarrollo personal<br>Hábitos · Salud</p>
+            <a class="button" href="coaching.html"><span>Conocer más<br>y solicitar turno</span><span aria-hidden="true">›</span></a>
+          </div>
+        </article>
+
+        <!-- Tarjeta Cosmetología -->
+        <article class="service-card beauty">
+          <div class="card-photo">
+            <a href="cosmetologia.html" aria-label="Ir a la página de la Lic. Antonella Tormos">
+            <img src="imagenes/anto.png" alt="Antonella Tormos">
+            </a>
+          </div>
+          <div class="card-body">
+            <span class="area-dot" aria-hidden="true">
+              <!-- Ícono de cosmetología -->
+              <img src="imagenes/iconocosmetologia.png" alt="" class="service-icon">
+            </span>
+            <h2>Dermocosmiatría</h2>
+            <h3>Antonella Tormos</h3>
+            <p>Enfermera · Dermocosmiatra<br><span class="small-divider"></span>Cuidado integral de la piel<br>y bienestar estético</p>
+            <a class="button" href="cosmetologia.html"><span>Conocer tratamientos</span><span aria-hidden="true">›</span></a>
+          </div>
+        </article>
+      </div>
+        <div id="contacto">
+          <section class="panel location">
+            <span class="symbol" aria-hidden="true">
+              <img src="imagenes/iconoubicacion.png" alt="ubicacion">
+            </span>
+            <div>
+              <h2>Nuestro consultorio</h2>
+              <p>Calle 6 N.º 823, entre 27 y 28<br>25 de Mayo, Provincia de Buenos Aires, Argentina</p>
+            </div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+6+823+25+de+Mayo+Buenos+Aires+Argentina" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">→</span></a>
+          </section>
+        </div>
+    </main>
+    <footer class="wrap footer">
+      Salud · Bienestar integral
+    </footer>
+  </body>
+</html>
